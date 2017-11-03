@@ -1,0 +1,100 @@
+@media all and (min-width:500px) and (max-width:1000px) {
+  
+
+/*设置头部导航栏的样式*/
+
+.nav {
+    .width-height-border-lineHeight(99%, 50px, transparent, 45px);
+    .color-bgColor(white, crimson);
+    text-align: center;
+    position: fixed;
+    margin-top: -7.5px;
+    
+    
+    /*设置导航内容居中*/
+    .header {
+        position: absolute;
+        .middle;
+        .width-height-border-lineHeight(100%, 50px, transparent, 45px);
+        /*设置返回按钮的样式*/
+        .btn-back {
+            .width-height-border-lineHeight(6%, 40px, transparent, "");
+            .absolute(2px, 5%);
+        }
+        /*设置搜索框的样式*/
+        .search {
+            .width-height-border-lineHeight(40%, 40px, transparent, "");
+            .absolute(2px, 40%);
+            input {
+                .width-height-border-lineHeight(95%, 90%, transparent, "");
+                border-radius: 5px;
+            }
+        }
+        /*设置搜索按钮的样式*/
+        .btn-search {
+            .width-height-border-lineHeight(10%, 40px, white, 40px);
+            .absolute(2px, 82%);
+        }
+    }
+}
+
+
+/*设置中间的内容部分*/
+
+.body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    .width-height-border-lineHeight(70%, auto, transparent, "");
+    .middle;
+    
+    .body-box {
+        /*看函数名猜函数的参数顺序  */
+        .width-height-border-lineHeight(100%, 150px, transparent, "");
+        .padding-fontSize-textIndent-boxSizing(20px, "", "", border-box);
+        border-top:1px solid crimson;
+        margin-bottom: 25px;
+        
+        /*设置图片放在左边的样式  */
+        .body-img-left {
+            .width-height-border-lineHeight(25%, 100%, transparent, "");
+            .left-float;
+            img {
+                .width-height-border-lineHeight(100%, auto, transparent, "");
+            }
+        }
+        
+        /*设置图片放在右边的样式  */
+        .body-img-right {
+            .width-height-border-lineHeight(25%, 100%, transparent, "");
+            .right-float;
+            img {
+                .width-height-border-lineHeight(100%, auto, transparent, "");
+            }
+        }
+        /*设置文本的样式 */
+        .body-text-left {
+            .width-height-border-lineHeight(70%, 150px, transparent, 25px);
+            .left-float;
+            .padding-fontSize-textIndent-boxSizing(20px, 10px, 2em, border-box);
+            .text-overflow(hidden);
+        }
+        .body-text-right {
+            .width-height-border-lineHeight(70%, 150px, transparent, 25px);
+            .right-float;
+            .padding-fontSize-textIndent-boxSizing(20px, 10px, 2em, border-box);
+            .text-overflow(hidden);
+        }
+    }
+}
+
+.footer {
+    .width-height-border-lineHeight(100%, 140px, transparent, "");
+    .color-bgColor(white, rgb(1, 78, 170));
+    .padding-fontSize-textIndent-boxSizing(30px, 10px, 2em, border-box);
+    .footer-container {
+        .width-height-border-lineHeight(80%, 100%, transparent, "");
+        .middle;
+    }
+}
+}

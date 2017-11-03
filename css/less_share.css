@@ -1,0 +1,20 @@
+/*绝对定位*/
+/*元素居中*/
+.middle {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+/*浮动样式*/
+.left-float {
+  float: left;
+}
+.right-float {
+  float: right;
+}
+/*长宽边框以及行高*/
+/*设置     内边距    文字大小     文本缩进       盒子大小*/
+/*设置文本溢出*/
+/*设置背景颜色和字体颜色*/

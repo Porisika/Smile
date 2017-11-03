@@ -1,0 +1,65 @@
+ /*绝对定位*/
+
+.absolute(@top, @left) {
+    top: @top;
+    left: @left;
+    position: absolute;
+}
+
+
+/*元素居中*/
+
+.middle {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+/*浮动样式*/
+
+.left-float {
+    float: left;
+}
+
+.right-float {
+    float: right;
+}
+
+
+/*长宽边框以及行高*/
+
+.width-height-border-lineHeight(@width, @height, @border, @line-height) {
+    width: @width;
+    height: @height;
+    border: 1px solid @border;
+    line-height: @line-height;
+}
+
+
+/*设置     内边距    文字大小     文本缩进       盒子大小*/
+
+.padding-fontSize-textIndent-boxSizing(@padding, @font-size, @text-indent, @box-sizing) {
+    padding: @padding;
+    font-size: @font-size;
+    text-indent: @text-indent;
+    box-sizing: @box-sizing;
+}
+
+
+/*设置文本溢出*/
+
+.text-overflow(@sty) {
+    overflow: @sty;
+}
+
+
+/*设置背景颜色和字体颜色*/
+
+.color-bgColor(@color, @bgColor) {
+    color: @color;
+    background-color: @bgColor;
+}
+

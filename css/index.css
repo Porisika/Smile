@@ -1,0 +1,182 @@
+/*绝对定位*/
+/*元素居中*/
+.middle {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+/*浮动样式*/
+.left-float {
+  float: left;
+}
+.right-float {
+  float: right;
+}
+/*长宽边框以及行高*/
+/*设置     内边距    文字大小     文本缩进       盒子大小*/
+/*设置文本溢出*/
+/*设置背景颜色和字体颜色*/
+/*设置头部导航栏的样式*/
+.nav {
+  width: 99%;
+  height: 50px;
+  border: 1px solid transparent;
+  line-height: 45px;
+  color: #ffffff;
+  background-color: #dc143c;
+  text-align: center;
+  position: fixed;
+  margin-top: -7.5px;
+  /*设置导航内容居中*/
+}
+.nav .header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 1200px;
+  height: 50px;
+  border: 1px solid transparent;
+  line-height: 45px;
+  /*设置返回按钮的样式*/
+  /*设置搜索框的样式*/
+  /*设置搜索按钮的样式*/
+}
+.nav .header .btn-back {
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  line-height: "";
+  top: 2px;
+  left: 5%;
+  position: absolute;
+}
+.nav .header .search {
+  width: 500px;
+  height: 40px;
+  border: 1px solid transparent;
+  line-height: "";
+  top: 2px;
+  left: 40%;
+  position: absolute;
+}
+.nav .header .search input {
+  width: 95%;
+  height: 90%;
+  border: 1px solid transparent;
+  line-height: "";
+  border-radius: 5px;
+}
+.nav .header .btn-search {
+  width: 60px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  line-height: 40px;
+  top: 2px;
+  left: 82%;
+  position: absolute;
+}
+/*设置中间的内容部分*/
+.body {
+  padding-top: 50px;
+  width: 850px;
+  height: auto;
+  border: 1px solid transparent;
+  line-height: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.body .body-box {
+  /*看函数名猜函数的参数顺序  */
+  width: 100%;
+  height: 200px;
+  border: 1px solid transparent;
+  line-height: "";
+  padding: 20px;
+  font-size: "";
+  text-indent: "";
+  box-sizing: border-box;
+  /*设置图片放在左边的样式  */
+  /*设置图片放在右边的样式  */
+  /*设置文本的样式 */
+}
+.body .body-box .body-img-left {
+  width: 25%;
+  height: 150px;
+  border: 1px solid transparent;
+  line-height: "";
+  float: left;
+}
+.body .body-box .body-img-left img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  line-height: "";
+}
+.body .body-box .body-img-right {
+  width: 25%;
+  height: 150px;
+  border: 1px solid transparent;
+  line-height: "";
+  float: right;
+}
+.body .body-box .body-img-right img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  line-height: "";
+}
+.body .body-box .body-text-left {
+  width: 70%;
+  height: 150px;
+  border: 1px solid transparent;
+  line-height: 25px;
+  float: left;
+  padding: 20px;
+  font-size: 12px;
+  text-indent: 2em;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.body .body-box .body-text-right {
+  width: 70%;
+  height: 150px;
+  border: 1px solid transparent;
+  line-height: 25px;
+  float: right;
+  padding: 20px;
+  font-size: 12px;
+  text-indent: 2em;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.footer {
+  width: 100%;
+  height: 160px;
+  border: 1px solid transparent;
+  line-height: "";
+  color: #ffffff;
+  background-color: #014eaa;
+  padding: 30px;
+  font-size: 12px;
+  text-indent: 2em;
+  box-sizing: border-box;
+}
+.footer .footer-container {
+  width: 800px;
+  height: 100%;
+  border: 1px solid transparent;
+  line-height: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}

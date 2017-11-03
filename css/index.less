@@ -1,0 +1,151 @@
+/*绝对定位*/
+
+.absolute(@top, @left) {
+    top: @top;
+    left: @left;
+    position: absolute;
+}
+
+
+/*元素居中*/
+
+.middle{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+
+/*浮动样式*/
+
+.left-float {
+    float: left;
+}
+
+.right-float {
+    float: right;
+}
+
+
+/*长宽边框以及行高*/
+
+.width-height-border-lineHeight(@width, @height, @border, @line-height) {
+    width: @width;
+    height: @height;
+    border: 1px solid @border;
+    line-height: @line-height;
+}
+
+
+/*设置     内边距    文字大小     文本缩进       盒子大小*/
+
+.padding-fontSize-textIndent-boxSizing(@padding, @font-size, @text-indent, @box-sizing) {
+    padding: @padding;
+    font-size: @font-size;
+    text-indent: @text-indent;
+    box-sizing: @box-sizing;
+}
+
+
+/*设置文本溢出*/
+
+.text-overflow(@sty) {
+    overflow: @sty;
+}
+
+/*设置背景颜色和字体颜色*/
+.color-bgColor(@color,@bgColor){
+    color: @color;
+    background-color: @bgColor;
+}
+
+/*设置头部导航栏的样式*/
+
+.nav {
+    .width-height-border-lineHeight(99%, 50px, transparent, 45px);
+     .color-bgColor(white,crimson);    
+    text-align: center;
+    position: fixed;
+    margin-top: -7.5px;
+    /*设置导航内容居中*/
+    .header {
+        position: absolute;
+        .middle;
+        .width-height-border-lineHeight(1200px, 50px, transparent, 45px);
+        /*设置返回按钮的样式*/
+        .btn-back {
+            .width-height-border-lineHeight(40px, 40px, transparent, "");
+            .absolute(2px, 5%);
+        }
+        /*设置搜索框的样式*/
+        .search {
+            .width-height-border-lineHeight(500px, 40px, transparent, "");
+            .absolute(2px, 40%);
+            input {
+                .width-height-border-lineHeight(95%, 90%, transparent, "");
+                border-radius: 5px;
+            }
+        }
+        /*设置搜索按钮的样式*/
+        .btn-search {
+            .width-height-border-lineHeight(60px, 40px, white, 40px);
+            .absolute(2px, 82%);
+        }
+    }
+}
+
+
+/*设置中间的内容部分*/
+
+.body {
+    padding-top: 50px;
+    .width-height-border-lineHeight(850px, auto, transparent, "");
+    .middle;
+    .body-box {
+        /*看函数名猜函数的参数顺序  */
+        .width-height-border-lineHeight(100%, 200px, transparent, "");
+        .padding-fontSize-textIndent-boxSizing(20px, "", "", border-box);
+        /*设置图片放在左边的样式  */
+        .body-img-left {
+            .width-height-border-lineHeight(25%, 150px, transparent, "");
+            .left-float;
+            img {
+                .width-height-border-lineHeight(100%, 100%, transparent, "");
+            }
+        }
+        /*设置图片放在右边的样式  */
+        .body-img-right {
+            .width-height-border-lineHeight(25%, 150px, transparent, "");
+            .right-float;
+            img {
+                .width-height-border-lineHeight(100%, 100%, transparent, "");
+            }
+        }
+        /*设置文本的样式 */
+        .body-text-left {
+            .width-height-border-lineHeight(70%, 150px, transparent, 25px);
+            .left-float;
+            .padding-fontSize-textIndent-boxSizing(20px, 12px, 2em, border-box);
+            .text-overflow(hidden);
+        }
+        .body-text-right {
+            .width-height-border-lineHeight(70%, 150px, transparent, 25px);
+            .right-float;
+            .padding-fontSize-textIndent-boxSizing(20px, 12px, 2em, border-box);
+            .text-overflow(hidden);
+        }
+    }
+}
+
+.footer{
+     .width-height-border-lineHeight(100%,160px,transparent,"");
+     .color-bgColor(white,rgb(1,78,170));
+     .padding-fontSize-textIndent-boxSizing(30px, 12px, 2em, border-box);
+     .footer-container{
+     .width-height-border-lineHeight(800px,100%,transparent,"");
+     .middle;
+         
+     }
+}
